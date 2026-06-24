@@ -48,23 +48,23 @@ export const HeroSection = () => {
               Trusted by 2,400+ teams
             </div>
             <div className="flex items-center gap-7 flex-wrap text-[#EEEEF0] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
-              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
+              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold hover:text-[#EEEEF0] text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
                 <span className="inline-block w-[18px] h-[18px] rounded-[4px] bg-white/15 shrink-0"></span>
                 <div> Vercel</div>
               </div>
-              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
+              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold hover:text-[#EEEEF0] text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
                 <span className="inline-block w-[18px] h-[18px] rounded-[4px] bg-white/15 shrink-0"></span>
                 <div> Linear</div>
               </div>
-              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
+              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold hover:text-[#EEEEF0] text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
                 <span className="inline-block w-[18px] h-[18px] rounded-[4px] bg-white/15 shrink-0"></span>
                 <div> Raycast</div>
               </div>
-              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
+              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold hover:text-[#EEEEF0] text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
                 <span className="inline-block w-[18px] h-[18px] rounded-[4px] bg-white/15 shrink-0"></span>
                 <div> Resend</div>
               </div>
-              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
+              <div className="flex items-center gap-1.5 opacity-25 transition-opacity duration-300 text-sm font-bold hover:text-[#EEEEF0] text-[#8A8B9E] tracking-[-0.02em] font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased box-border m-0 p-0">
                 <span className="inline-block w-[18px] h-[18px] rounded-[4px] bg-white/15 shrink-0"></span>
                 <div> Supabase</div>
               </div>
