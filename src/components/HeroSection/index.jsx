@@ -83,7 +83,7 @@ export const HeroSection = () => {
             <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased m-0 box-border p-[20px]">
               <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased m-0 p-0 box-border grid grid-cols-3 gap-[12px] mb-[16px]">
                 <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased m-0 box-border bg-[#2E2E36] rounded-[10px] p-[14px] border border-[rgba(255,255,255,0.06)]">
-                  <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased m-0 p-0 box-border text-[10px] text-[#55566A] mb-[6px] uppercase tracking-[0.06em]">
+                  <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] leading-[1.6] antialiased m-0 p-0 box-border text-[10px] hover:text-[#EEEEF0] text-[#55566A] mb-[6px] uppercase tracking-[0.06em]">
                     Page Views
                   </div>
                   <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased m-0 p-0 box-border text-[20px] font-[800] tracking-[-0.04em]">

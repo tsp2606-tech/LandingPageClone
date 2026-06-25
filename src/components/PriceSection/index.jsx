@@ -1,6 +1,11 @@
 import React from "react";
+import { useState } from "react";
 
 export const PriceSection = () => {
+  const [isMonthly, setIsMonthly] = useState(true);
+  const onToggleClick = () => {
+    setIsMonthly(!isMonthly);
+  };
   return (
     <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased m-0 box-border py-[120px] relative bg-gradient-to-b from-[#1E1E24] via-[rgba(255,107,107,0.02)] to-[#1E1E24]">
       <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased box-border w-full max-w-[1200px] mx-auto px-6">
@@ -17,13 +22,22 @@ export const PriceSection = () => {
           </p>
         </div>
         <div className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[#EEEEF0] leading-[1.6] antialiased m-0 p-0 box-border flex items-center justify-center gap-[14px] mb-[56px] transition-none opacity-100 translate-y-0">
-          <span className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[14px] font-[500] text-[#EEEEF0] transition-colors duration-300 m-0 p-0 box-border leading-[1.6] antialiased">
+          <span
+            className={`font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[14px] font-[500] transition-colors duration-300 m-0 p-0 box-border leading-[1.6] antialiased ${isMonthly ? "text-[#EEEEF0]" : "text-[#55566A]"}`}
+          >
             Monthly
           </span>
-          <button className="relative w-[48px] h-[26px] bg-white/8 rounded-full cursor-pointer border border-[rgba(255,255,255,0.06)] m-0 p-0 box-border antialiased">
-            <div className="absolute top-[3px] left-[3px] w-[18px] h-[18px] bg-[#FF6B6B] rounded-full shadow-[0_0_12px_rgba(255,107,107,0.35)] transition-transform duration-300 ease-in-out" />
+          <button
+            onClick={onToggleClick}
+            className="relative w-[48px] h-[26px] bg-white/8 rounded-full cursor-pointer border border-[rgba(255,255,255,0.06)] m-0 p-0 box-border antialiased"
+          >
+            <div
+              className={`absolute top-[3px] w-[18px] h-[18px] bg-[#FF6B6B] rounded-full shadow-[0_0_12px_rgba(255,107,107,0.35)] transition-all duration-300 ease-in-out ${isMonthly ? "left-[3px]" : "left-[25px]"}`}
+            />
           </button>
-          <span className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[14px] font-[500] text-[#55566A] transition-colors duration-300 m-0 p-0 box-border leading-[1.6] antialiased">
+          <span
+            className={`font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[14px] font-[500] transition-colors duration-300 m-0 p-0 box-border leading-[1.6] antialiased ${!isMonthly ? "text-[#EEEEF0]" : "text-[#55566A]"}`}
+          >
             Annually
           </span>
           <span className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[11px] font-[700] text-[#22C55E] bg-[#22C55E]/10 px-[10px] py-[3px] rounded-full border border-[#22C55E]/20 box-border leading-[1.6] antialiased m-0">
@@ -115,12 +129,24 @@ export const PriceSection = () => {
               <span class="text-[#8A8B9E] text-[18px] font-[500] mt-[6px]">
                 $
               </span>
-              <span class="text-[44px] font-[800] tracking-[-0.03em] text-[#EEEEF0] leading-none">
-                25
+              <span
+                className={`text-[44px] font-[800] tracking-[-0.03em] text-[#EEEEF0] leading-none ${isMonthly ? "text-[#EEEEF0]" : "text-[#55566A]"}`}
+              >
+                {isMonthly ? "25" : "17.50"}
               </span>
             </div>
 
-            <div class="text-[13px] text-[#55566A] mb-[28px]">per month</div>
+            <div
+              className={`text-[13px] mb-[28px] ${isMonthly ? "text-[#55566A]" : "text-[#55566A]"}`}
+            >
+              {isMonthly ? (
+                "per month"
+              ) : (
+                <p>
+                  per month <span className="text-white">($210 per year)</span>
+                </p>
+              )}
+            </div>
 
             <a
               href="#"
@@ -193,12 +219,25 @@ export const PriceSection = () => {
               <span class="text-[#8A8B9E] text-[18px] font-[500] mt-[6px]">
                 $
               </span>
-              <span class="text-[44px] font-[800] tracking-[-0.03em] text-[#EEEEF0] leading-none">
-                120
+              <span
+                className={`text-[44px] font-[800] tracking-[-0.03em] text-[#EEEEF0] leading-none ${isMonthly ? "text-[#EEEEF0]" : "text-[#55566A]"}`}
+              >
+                {isMonthly ? "120" : "84"}
               </span>
             </div>
 
-            <div class="text-[13px] text-[#55566A] mb-[28px]">per month</div>
+            <div
+              className={`text-[13px] mb-[28px] ${isMonthly ? "text-[#55566A]" : "text-[#55566A]"}`}
+            >
+              {isMonthly ? (
+                "per month"
+              ) : (
+                <p>
+                  per month{" "}
+                  <span className="text-white">($1,008 per year)</span>
+                </p>
+              )}
+            </div>
 
             <a
               href="#"
