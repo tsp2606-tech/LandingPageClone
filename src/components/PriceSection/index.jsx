@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import CountUp from "react-countup";
+const CountUpComponent = CountUp?.default ?? CountUp;
 
 export const PriceSection = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -41,7 +43,14 @@ export const PriceSection = () => {
             Annually
           </span>
           <span className="font-['Plus_Jakarta_Sans',-apple-system,sans-serif] text-[11px] font-[700] text-[#22C55E] bg-[#22C55E]/10 px-[10px] py-[3px] rounded-full border border-[#22C55E]/20 box-border leading-[1.6] antialiased m-0">
-            Save 30%
+            <CountUpComponent
+              start={0}
+              duration={0.5}
+              end={30}
+              suffix="%"
+              enableScrollSpy
+              scrollSpyOnce
+            />
           </span>
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-[20px] items-center m-0 p-0 box-border">
@@ -132,7 +141,23 @@ export const PriceSection = () => {
               <span
                 className={`text-[44px] font-[800] tracking-[-0.03em] text-[#EEEEF0] leading-none ${isMonthly ? "text-[#EEEEF0]" : "text-[#55566A]"}`}
               >
-                {isMonthly ? "25" : "17.50"}
+                {isMonthly ? (
+                  <CountUpComponent
+                    start={0}
+                    duration={0.5}
+                    end={25}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                ) : (
+                  <CountUpComponent
+                    start={0}
+                    duration={0.5}
+                    end={17.5}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                )}
               </span>
             </div>
 
@@ -143,7 +168,19 @@ export const PriceSection = () => {
                 "per month"
               ) : (
                 <p>
-                  per month <span className="text-white">($210 per year)</span>
+                  per month{" "}
+                  <span className="text-white">
+                    (
+                    <CountUpComponent
+                      start={0}
+                      duration={0.5}
+                      end={210}
+                      suffix="per year"
+                      enableScrollSpy
+                      scrollSpyOnce
+                    />
+                    )
+                  </span>
                 </p>
               )}
             </div>
@@ -222,7 +259,23 @@ export const PriceSection = () => {
               <span
                 className={`text-[44px] font-[800] tracking-[-0.03em] text-[#EEEEF0] leading-none ${isMonthly ? "text-[#EEEEF0]" : "text-[#55566A]"}`}
               >
-                {isMonthly ? "120" : "84"}
+                {isMonthly ? (
+                  <CountUpComponent
+                    start={0}
+                    duration={0.5}
+                    end={120}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                ) : (
+                  <CountUpComponent
+                    start={0}
+                    duration={0.5}
+                    end={84}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
+                )}
               </span>
             </div>
 
@@ -234,7 +287,18 @@ export const PriceSection = () => {
               ) : (
                 <p>
                   per month{" "}
-                  <span className="text-white">($1,008 per year)</span>
+                  <span className="text-white">
+                    (
+                    <CountUpComponent
+                      start={0}
+                      duration={0.5}
+                      end={1008}
+                      suffix="per year"
+                      enableScrollSpy
+                      scrollSpyOnce
+                    />
+                    ) per year
+                  </span>
                 </p>
               )}
             </div>

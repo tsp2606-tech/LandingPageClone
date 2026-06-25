@@ -19,9 +19,9 @@ export const Home = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-down">
       <Header />
-      <div data-aos="fade-up">
+      <div data-aos="fade-down">
         <HeroSection />
       </div>
       <div data-aos="fade-up">
@@ -30,7 +30,7 @@ export const Home = () => {
       <div data-aos="fade-up">
         <StaticSection />
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="zoom-in">
         <PriceSection />
       </div>
       <div data-aos="fade-up">
